@@ -29,17 +29,24 @@ html {
     height: 100%;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 1.8em;
-    font-family: 'Acme', sans-serif;
+    font-style: italic;
+    font-size: 2.5em;
+    font-family: 'Rochester', cursive;
     padding: 10px 20px 25px 20px;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 .logo a:hover {
-    background: white;
-    color: #003366;
+    background: white !important;
+    color: #003366 !important;
+    text-decoration: none;
+}
+
+.logo a:focus {
+    color: white;
     text-decoration: none;
 }
 
@@ -71,6 +78,18 @@ html {
 }
 
 .active {
+    background-color: #003366;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.inactive {
+    background-color: transparent;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.activebar {
     background: white;
     color: #003366;
 }
