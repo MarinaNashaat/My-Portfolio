@@ -2,7 +2,6 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    max-height: 1300px;
 }
 
 .navbar {
@@ -203,7 +202,7 @@ nav.navbar.active {
 #about-me {
     background-color: white;
     width: 100%;
-    height: 120vh;
+    /* height: 120vh; */
 }
 
 #about-me .row {
@@ -294,7 +293,7 @@ nav.navbar.active {
     text-align: center;
     background-color: #141414;
     padding: 10rem 2rem;
-    height: 200vh;
+    /* height: 200vh; */
 }
 
 .projects-grid {
@@ -473,6 +472,7 @@ a {
 .row-div {
     width: 300px;
     height: 270px;
+    margin-bottom: 20px;
     color: rgb(19, 19, 19);
     box-shadow: 10px 10px 10px rgb(230, 230, 230), -10px -10px 10px rgb(230, 230, 230);
 }
