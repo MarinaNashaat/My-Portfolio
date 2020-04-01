@@ -340,7 +340,7 @@ nav.navbar.active {
     }
     .info-div p {
         display: block;
-        font-size: 1.9em;
+        font-size: 1.5em;
     }
 }
 
@@ -550,8 +550,20 @@ a {
     }
 }
 
-@media screen and (min-width:576px) and (max-width: 767px) {}
+@media screen and (min-width:576px) and (max-width: 767px) {
+    #contact {
+        height: 150vh;
+    }
+}
 
-@media screen and (min-width:768px) and (max-width: 1200px) {}
+@media screen and (min-width:768px) and (max-width: 1200px) {
+    #contact {
+        height: 100vh;
+    }
+}
 
-@media screen and (min-width:1200px) {}
+@media screen and (min-width:1200px) {
+    #contact {
+        height: 100vh;
+    }
+}
