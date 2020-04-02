@@ -500,13 +500,40 @@ a {
     #project-header {
         font-size: 1.5em;
     }
+    .project-title1 .project-title2 h2 {
+        font-size: 1.5em;
+    }
 }
 
-@media screen and (min-width:576px) and (max-width: 767px) {}
+@media screen and (min-width:576px) and (max-width: 767px) {
+    .project-div {
+        width: 80%;
+        margin: auto;
+    }
+    .project-title1 {
+        width: 80%;
+        margin: auto;
+    }
+    .project-title2 {
+        width: 80%;
+        margin: auto;
+    }
+}
 
-@media screen and (min-width:768px) and (max-width: 1200px) {}
-
-@media screen and (min-width:1200px) {}
+@media screen and (min-width:768px) and (max-width: 1200px) {
+    .project-div {
+        width: 80%;
+        margin: auto;
+    }
+    .project-title1 {
+        width: 80%;
+        margin: auto;
+    }
+    .project-title2 {
+        width: 80%;
+        margin: auto;
+    }
+}
 
 #contact {
     display: flex;
@@ -579,7 +606,7 @@ a {
 
 @media screen and (min-width:576px) and (max-width: 767px) {
     #contact {
-        height: 290vh;
+        height: 190vh;
     }
     .contact-links .col-md-4 {
         padding: 10px;
@@ -595,6 +622,6 @@ a {
 
 @media screen and (min-width:1200px) {
     #contact {
-        height: 100vh;
+        height: 80vh;
     }
 }
