@@ -465,6 +465,10 @@ img {
     transform: scale(1.1);
 }
 
+.project-div h2 {
+    font-size: 1.5em;
+}
+
 .project-link:hover .project-div h2 {
     color: #ffffff;
 }
@@ -500,8 +504,8 @@ a {
     #project-header {
         font-size: 1.5em;
     }
-    .project-title1 .project-title2 h2 {
-        font-size: 1.5em;
+    .project-div h2 {
+        font-size: 1em;
     }
 }
 
@@ -606,7 +610,7 @@ a {
 
 @media screen and (min-width:576px) and (max-width: 767px) {
     #contact {
-        height: 190vh;
+        height: 150vh;
     }
     .contact-links .col-md-4 {
         padding: 10px;
