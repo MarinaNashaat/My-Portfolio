@@ -4,6 +4,18 @@ html {
     padding: 0;
 }
 
+body {
+    height: 100%;
+    background-color: #fff;
+    width: 100%;
+}
+
+@media screen and (min-width:200px) and (max-width:768px) {
+    body {
+        height: 100%;
+    }
+}
+
 .navbar {
     width: 100%;
     z-index: 9999;
@@ -471,7 +483,22 @@ a {
 
 @media screen and (min-width: 200px) and (max-width: 576px) {
     #projects {
-        height: 470vh;
+        height: 450vh;
+    }
+    .project-div {
+        width: 90%;
+        margin: auto;
+    }
+    .project-title1 {
+        width: 90%;
+        margin: auto;
+    }
+    .project-title2 {
+        width: 90%;
+        margin: auto;
+    }
+    #project-header {
+        font-size: 1.5em;
     }
 }
 
