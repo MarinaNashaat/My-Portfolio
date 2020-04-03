@@ -16,12 +16,6 @@ html {
     }
 }
 
-@media screen and (min-width:1000px) {
-    body {
-        max-height: 4000px;
-    }
-}
-
 .navbar {
     width: 100%;
     z-index: 9999;
@@ -387,6 +381,12 @@ a {
     }
     .project-div {
         height: 100%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #projects {
+        padding: 5rem 2rem;
     }
 }
 
