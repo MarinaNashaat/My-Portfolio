@@ -449,6 +449,6 @@ a {
 
 @media screen and (min-width:1000px) {
     #contact {
-        height: 80%;
+        height: 900px;
     }
 }
