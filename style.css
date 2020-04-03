@@ -116,9 +116,9 @@ nav.navbar.active {
         font-size: 2em;
     }
     .navbar-default .navbar-nav li {
-        width: 100%;
         font-size: 1em;
-        text-align: left;
+        text-align: center;
+        padding: 0 20px 0 5px;
     }
 }
 
@@ -453,7 +453,6 @@ a {
 
 @media screen and (min-width:1000px) {
     #contact {
-        height: 700px;
-        margin: auto;
+        height: 80%;
     }
 }
