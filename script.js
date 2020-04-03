@@ -46,11 +46,10 @@ $(document).ready(function() {
 
 $(document).ready(function() { // Tells the f//unction to wait to preform until everything on the page has loaded.
     $(window).scroll(function() { // Says this function is preformed continuisly while scrolling.
-        var projectHeight = $(window).height();
         var Scroll = $(window).scrollTop(), // This variable finds the distance you have scrolled from the top.
             SectionOneOffset = $('#about-me').offset().top, // This variable finds the distance between #section-one and the top. Replace #section-one with the ID of your section.
             SectionTwoOffset = $('#projects').offset().top - 100, // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
-            SectionThreeOffset = $('#contact').offset().top - projectHeight + 200; // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
+            SectionThreeOffset = $('#contact').offset().top - 200; // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
 
         if (Scroll >= SectionOneOffset) { // If you have scrolled past section one do this.
             $(".navbar-default .menu-item-1").addClass("activebar"); // Adds class of current-menu-item to the menu item with a class of menu-item-1
@@ -72,18 +71,18 @@ $(document).ready(function() { // Tells the f//unction to wait to preform until 
             $(".menu-item-3").removeClass("activebar"); // Removes class of current-menu-item to the menu item with a class of menu-item-2
         }
     });
-    // $("#about-link").on("click", function() {
-    //     $(this).scrollTo($("#about-me"), 1000);
-    // });
-    // $("#porto-link").on("click", function() {
-    //     $(this).scrollTo($("#projects"), 1000);
-    // });
-    // $("#contact-link").on("click", function() {
-    //     $(this).scrollTo($("#contact"), 1000);
-    // });
-    // $("#logo-name").on("click", function() {
-    //     $(this).scrollTo(0, 1000);
+    $("#about-link").on("click", function() {
+        $(this).scrollTo($("#about-me"), 1000);
+    });
+    $("#porto-link").on("click", function() {
+        $(this).scrollTo($("#projects"), 1000);
+    });
+    $("#contact-link").on("click", function() {
+        $(this).scrollTo($("#contact"), 1000);
+    });
+    $("#logo-name").on("click", function() {
+        $(this).scrollTo(0, 1000);
 
-    // });
+    });
 
 });
