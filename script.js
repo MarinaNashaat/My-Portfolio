@@ -19,14 +19,6 @@ $(document).ready(function() {
     'use strict';
 
     $(window).scroll(function() {
-        // $("a[href^='#']").on("click", function() {
-        //     $('a').each(function() {
-        //         $(this).removeClass('activebar');
-
-        //     });
-        //     $(this).addClass('activebar');
-
-        // });
         $('.navbar-default .navbar-nav li a').on('click', function() {
             $('.navbar-default .navbar-nav li a').removeClass('activebar');
             $(this).addClass('activebar');
@@ -37,31 +29,32 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() { // Tells the f//unction to wait to preform until everything on the page has loaded.
-    $(window).scroll(function() { // Says this function is preformed continuisly while scrolling.
-        var Scroll = $(window).scrollTop(), // This variable finds the distance you have scrolled from the top.
-            SectionOneOffset = $('#about-me').offset().top, // This variable finds the distance between #section-one and the top. Replace #section-one with the ID of your section.
-            SectionTwoOffset = $('#projects').offset().top - 100, // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
-            SectionThreeOffset = $('#contact').offset().top - 200; // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
-
-        if (Scroll >= SectionOneOffset) { // If you have scrolled past section one do this.
-            $(".navbar-default .menu-item-1").addClass("activebar"); // Adds class of current-menu-item to the menu item with a class of menu-item-1
-        } else { // If you have not scrolled section one do this.
-            $(".navbar-default .menu-item-1").removeClass("activebar"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
+$(document).ready(function() { 
+    $(window).scroll(function() { 
+        var Scroll = $(window).scrollTop(), 
+            SectionOneOffset = $('#about-me').offset().top,
+            SectionTwoOffset = $('#projects').offset().top - 100,
+            SectionThreeOffset = $('#contact').offset().top - 200; 
+        
+        if (Scroll >= SectionOneOffset) { 
+            $(".navbar-default .menu-item-1").addClass("activebar"); 
         }
-        if (Scroll >= SectionTwoOffset) { // If you have scrolled past section two do this.You can duplicate this for as many sections as you want.
-            $(".menu-item-2").addClass("activebar"); // Adds class of current-menu-item to the menu item with a class of menu-item-2
-            $(".menu-item-1").removeClass("activebar");
-            $(".menu-item-3").removeClass("activebar"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
-        } else { // If you have not scrolled section two do this.
-            $(".menu-item-2").removeClass("activebar"); // Removes class of current-menu-item to the menu item with a class of menu-item-2
+        else {
+            $(".navbar-default .menu-item-1").removeClass("activebar");
         }
-        if (Scroll >= SectionThreeOffset) { // If you have scrolled past section two do this.You can duplicate this for as many sections as you want.
-            $(".menu-item-3").addClass("activebar"); // Adds class of current-menu-item to the menu item with a class of menu-item-2
+        if (Scroll >= SectionTwoOffset) { 
+            $(".menu-item-2").addClass("activebar");
             $(".menu-item-1").removeClass("activebar");
-            $(".menu-item-2").removeClass("activebar"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
-        } else { // If you have not scrolled section two do this.
-            $(".menu-item-3").removeClass("activebar"); // Removes class of current-menu-item to the menu item with a class of menu-item-2
+            $(".menu-item-3").removeClass("activebar"); 
+        } else {
+            $(".menu-item-2").removeClass("activebar"); 
+        }
+        if (Scroll >= SectionThreeOffset) {
+            $(".menu-item-3").addClass("activebar");
+            $(".menu-item-1").removeClass("activebar");
+            $(".menu-item-2").removeClass("activebar"); 
+        } else { 
+            $(".menu-item-3").removeClass("activebar"); 
         }
     });
     $("#about-link").on("click", function() {
