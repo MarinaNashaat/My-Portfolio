@@ -390,7 +390,6 @@ a {
     align-items: center;
     justify-content: center;
     background-color: white;
-    height: 120vh;
     width: 100%;
 }
 
@@ -449,5 +448,11 @@ a {
     }
     .row-div span {
         font-size: 15px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    #contact {
+        height: 800px;
     }
 }
