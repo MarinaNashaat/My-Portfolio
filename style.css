@@ -385,7 +385,9 @@ a {
 }
 
 #contact {
+    text-align: center;
     background-color: white;
+    padding: 10rem 5rem;
     width: 100%;
 }
 
@@ -404,11 +406,7 @@ a {
 }
 
 .contact-links {
-    display: flex;
-    justify-content: center;
     width: 100%;
-    max-width: 980px;
-    margin-top: 5rem;
 }
 
 .contact-btn {
@@ -425,6 +423,7 @@ a {
     width: 300px;
     height: 270px;
     margin-bottom: 20px;
+    margin-left: 30px;
     color: rgb(19, 19, 19);
     box-shadow: 10px 10px 10px rgb(230, 230, 230), -10px -10px 10px rgb(230, 230, 230);
 }
@@ -447,8 +446,9 @@ a {
     }
 }
 
-@media screen and (min-width:1000px) {
+
+/* @media screen and (min-width:1000px) {
     #contact {
         height: 900px;
     }
-}
+} */
