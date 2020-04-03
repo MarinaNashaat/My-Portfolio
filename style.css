@@ -384,12 +384,6 @@ a {
     }
 }
 
-@media screen and (min-width:1000px) {
-    #projects {
-        padding: 5rem 2rem;
-    }
-}
-
 #contact {
     display: flex;
     flex-direction: column;
@@ -456,10 +450,3 @@ a {
         font-size: 15px;
     }
 }
-
-
-/* @media screen and (min-width:1000px) {
-    #contact {
-        height: 80%;
-    }
-} */
