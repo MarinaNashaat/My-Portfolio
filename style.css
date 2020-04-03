@@ -4,18 +4,6 @@ html {
     padding: 0;
 }
 
-body {
-    height: 100%;
-    background-color: #fff;
-    width: 100%;
-}
-
-@media screen and (min-width:200px) and (max-width:768px) {
-    body {
-        height: 100%;
-    }
-}
-
 .navbar {
     width: 100%;
     z-index: 9999;
@@ -173,7 +161,6 @@ nav.navbar.active {
     background-size: 100% 100%;
     background-color: black;
     height: 100vh;
-    margin-top: -20px;
     width: 100%;
 }
 
@@ -181,76 +168,30 @@ nav.navbar.active {
     text-align: center;
     font-family: 'Acme', sans-serif;
     color: white;
-    padding-top: 300px;
+    margin-top: 100px;
 }
 
-#welcome-section p {
-    padding: 20px 60px;
-    font-size: 80px;
+.div-welcome h1 {
+    font-size: 2em;
+}
+
+.div-welcome p {
+    font-size: 50px;
     color: #003366;
 }
 
-@media screen and (min-width: 200px) and (max-width: 576px) {
-    #welcome-section {
-        width: 100%;
-    }
-    .div-welcome {
-        text-align: center;
-    }
-    #welcome-section h1 {
+@media screen and (max-width: 768px) {
+    .div-welcome h1 {
         font-size: 1em;
     }
-    #welcome-section p {
-        font-size: 2.0em;
+    .div-welcome p {
+        font-size: 30px;
+        color: #003366;
     }
 }
 
-@media screen and (min-width:576px) and (max-width: 767px) {
-    #welcome-section {
-        width: 100%;
-    }
-    .div-welcome {
-        text-align: center;
-        padding-top: 300px;
-    }
-    #welcome-section h1 {
-        font-size: 1.2em;
-    }
-    #welcome-section p {
-        font-size: 2.3em;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width: 1200px) {
-    #welcome-section {
-        width: 100%;
-    }
-    .div-welcome {
-        text-align: center;
-        padding-top: 500px;
-    }
-    #welcome-section h1 {
-        font-size: 1.3em;
-    }
-    #welcome-section p {
-        font-size: 2.5em;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    #welcome-section {
-        width: 100%;
-    }
-    .div-welcome {
-        text-align: center;
-        padding-top: 500px;
-    }
-    #welcome-section h1 {
-        font-size: 1.5em;
-    }
-    #welcome-section p {
-        font-size: 2.7em;
-    }
+.container {
+    padding: 60px 50px;
 }
 
 #about-me {
@@ -309,68 +250,23 @@ nav.navbar.active {
     height: 100%;
 }
 
-@media screen and (min-width: 200px) and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .skills {
-        margin-left: 30px;
-        padding: 20px 30px;
-        font-size: 1em;
+        margin-left: 20px;
     }
-    .info-div p {
-        display: block;
-        font-size: 1em;
+    .skills span {
+        font-size: 15px;
     }
-}
-
-@media screen and (min-width:576px) and (max-width: 767px) {
-    .skills {
-        margin-left: 30px;
-        padding: 20px 30px;
-        font-size: 1.3em;
-    }
-    .info-div p {
-        display: block;
-        font-size: 1em;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width: 1200px) {
-    .skills {
-        margin-left: 30px;
-        padding: 20px 30px;
-        font-size: 1.4em;
-    }
-    .info-div p {
-        display: block;
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .skills {
-        padding: 20px 30px;
-        font-size: 2.8em;
-    }
-    .info-div p {
-        display: block;
-        font-size: 1.5em;
+    .info-div {
+        font-size: 15px;
     }
 }
 
 #projects {
     text-align: center;
     background-color: #141414;
-    padding: 10rem 2rem;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 3rem;
+    padding: 10rem 5rem;
     width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
 }
 
 #projects #project-header {
@@ -382,9 +278,12 @@ nav.navbar.active {
     font-family: 'Fredoka One', sans-serif;
 }
 
-img {
-    width: 100%;
-    display: block;
+.row {
+    padding-bottom: 25px;
+}
+
+#projects .col-md-4 {
+    padding-bottom: 25px;
 }
 
 .project-link {
@@ -485,57 +384,12 @@ a {
     text-decoration: none;
 }
 
-@media screen and (min-width: 200px) and (max-width: 576px) {
-    #projects {
-        height: 450vh;
-    }
-    .project-div {
-        width: 90%;
-        margin: auto;
-    }
-    .project-title1 {
-        width: 90%;
-        margin: auto;
-    }
-    .project-title2 {
-        width: 90%;
-        margin: auto;
-    }
+@media screen and (max-width: 576px) {
     #project-header {
-        font-size: 1.5em;
+        font-size: 13px;
     }
     .project-div h2 {
         font-size: 1em;
-    }
-}
-
-@media screen and (min-width:576px) and (max-width: 767px) {
-    .project-div {
-        width: 80%;
-        margin: auto;
-    }
-    .project-title1 {
-        width: 80%;
-        margin: auto;
-    }
-    .project-title2 {
-        width: 80%;
-        margin: auto;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width: 1200px) {
-    .project-div {
-        width: 80%;
-        margin: auto;
-    }
-    .project-title1 {
-        width: 80%;
-        margin: auto;
-    }
-    .project-title2 {
-        width: 80%;
-        margin: auto;
     }
 }
 
@@ -545,8 +399,8 @@ a {
     align-items: center;
     justify-content: center;
     background-color: white;
+    /* height: 100vh; */
     width: 100%;
-    height: 100vh;
 }
 
 .contact-header h1 {
@@ -596,36 +450,4 @@ a {
 
 .row-div h2 {
     font-family: 'Acme', sans-serif;
-}
-
-@media screen and (min-width: 200px) and (max-width: 575px) {
-    #contact {
-        height: 170vh;
-    }
-    .contact-links .col-md-4 {
-        padding: 10px;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width:576px) and (max-width: 767px) {
-    #contact {
-        height: 150vh;
-    }
-    .contact-links .col-md-4 {
-        padding: 10px;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width: 1200px) {
-    #contact {
-        height: 150vh;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    #contact {
-        height: 80vh;
-    }
 }
