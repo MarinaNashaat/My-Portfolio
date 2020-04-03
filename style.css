@@ -390,6 +390,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: white;
+    height: 120vh;
     width: 100%;
 }
 
