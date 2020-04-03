@@ -24,7 +24,13 @@ $(document).ready(function() {
             $(this).addClass('activebar');
         });
     });
+ $('.navbar-nav li a').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+    $('.logo').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
 
+    });
 
 });
 
