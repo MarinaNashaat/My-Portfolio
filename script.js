@@ -86,3 +86,5 @@ $(document).ready(function() { // Tells the f//unction to wait to preform until 
     });
 
 });
+
+AOS.init();
