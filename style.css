@@ -113,7 +113,15 @@ nav.navbar.active {
     border-color: white;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 320px) {
+    .navbar-default .navbar-nav li {
+        font-size: .9em;
+        text-align: center;
+        padding: 0 10px 0 5px;
+    }
+}
+
+@media screen and (min-width: 321px) {
     .navbar-default .navbar-nav li {
         font-size: .9em;
         text-align: center;
@@ -399,7 +407,6 @@ a {
 }
 
 .contact-btn {
-    color: #003366;
     font-size: 55px;
 }
 
